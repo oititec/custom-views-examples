@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/successView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/brand_color_secondary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:gravity="center_horizontal"
+            android:text="@string/fc_all_right"
+            android:textColor="@color/neutral_color_high_pure"
+            android:textSize="@dimen/font_size_md"
+            app:fontFamily="@font/inter_bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fc_feedback_success" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/failureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/brand_color_secondary"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fc_feedback_failure" />
+
+        <TextView
+            android:id="@+id/failureTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:gravity="center_horizontal"
+            android:text="@string/fc_verification_error"
+            android:textColor="@color/neutral_color_high_pure"
+            android:textSize="@dimen/font_size_md"
+            app:fontFamily="@font/inter_bold" />
+
+        <Button
+            android:id="@+id/failureCloseButton"
+            style="@style/OitiSecondaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/fc_close"
+            app:layout_constraintEnd_toStartOf="@id/usePictureButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottomSheetTitleTextView" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
