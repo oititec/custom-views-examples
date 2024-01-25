@@ -11,7 +11,7 @@ Para as telas customizadas do Liveness 3D, utilize os links a seguir:
 - [iOS](/iOS/Liveness3D/)
 - [Android](/Android/Liveness3D/)
 
-## Docore
+## Doc Core
 
 Para as telas customizadas da DocCore, utilize os links a seguir:
 
